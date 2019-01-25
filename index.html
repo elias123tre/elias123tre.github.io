@@ -23,8 +23,8 @@
 		/>
 		<link
 			rel="shortcut icon"
-			href="http://www.iconarchive.com/download/i83651/pelfusion/long-shadow-media/Settings.ico"
-			type="image/x-icon"
+			href="https://i0.wp.com/androidpicks.com/wp-content/uploads/2016/03/Lollipop-Settings-Icon-Android-Picks-150x150.png"
+			type="image/png"
 		/>
 
 		<script type="text/javascript">
@@ -128,6 +128,7 @@
 				if (hash == "") {
 					$("#welcome").fadeIn();
 					$("a[href!='#']").css("background", "none");
+					document.title = "Elias - Portal";
 				}
 
 				if (hash.includes("#program")) {
@@ -135,30 +136,45 @@
 					$("#program").fadeIn();
 					$("a[href!='#program']").css("background", "none");
 					$("a[href='#program']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#program']>li").html();
 				}
 				if (hash.includes("#skola")) {
 					$("#welcome").hide();
 					$("#skola").fadeIn();
 					$("a[href!='#skola']").css("background", "none");
 					$("a[href='#skola']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#skola']>li").html();
 				}
 				if (hash.includes("#projekt")) {
 					$("#welcome").hide();
 					$("#projekt").fadeIn();
 					$("a[href!='#projekt']").css("background", "none");
 					$("a[href='#projekt']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#projekt']>li").html();
 				}
 				if (hash.includes("#digital")) {
 					$("#welcome").hide();
 					$("#digital").fadeIn();
 					$("a[href!='#digital']").css("background", "none");
 					$("a[href='#digital']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#digital']>li").html();
 				}
 				if (hash.includes("#familj")) {
 					$("#welcome").hide();
 					$("#familj").fadeIn();
 					$("a[href!='#familj']").css("background", "none");
 					$("a[href='#familj']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#familj']>li").html();
 				}
 			}
 			changeContent();
