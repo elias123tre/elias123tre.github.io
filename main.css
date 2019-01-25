@@ -1,6 +1,7 @@
 /* Initial */
 * {
 	border: none;
+	outline: 0;
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
@@ -193,6 +194,7 @@ a.hidden-link {
 
 #navmobile {
 	width: 200px;
+	height: 100vh;
 	z-index: 10;
 	margin-left: -200px;
 	position: fixed;

@@ -90,14 +90,13 @@
 					.appendTo("#navmobile");
 				$("#navmobile>nav>ul").css("flex-direction", "column");
 
-				var navheight = $("#navmobile>nav").outerHeight();
-				$("#navmobile").css("top", navheight);
-
 				$("#overlay").click(function() {
 					$("#navmobile").css("margin-left", "-200px");
 					$("#overlay").fadeOut(500);
 				});
 				function openMenu() {
+					var navheight = $("#navmobile>nav").outerHeight();
+					$("#navmobile").css("top", navheight);
 					if ($("#navmobile").css("margin-left") == "0px") {
 						$("#navmobile").css("margin-left", "-200px");
 						$("#overlay").fadeOut(500);
@@ -128,6 +127,7 @@
 
 				if (hash == "") {
 					$("#welcome").fadeIn();
+					$("a[href!='#']").css("background", "none");
 				}
 
 				if (hash.includes("#program")) {
