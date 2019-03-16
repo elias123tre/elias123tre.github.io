@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="se">
+	<head>
+		<style>
+			body {
+				display: none;
+			}
+		</style>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Elias - Portal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Elias" />
+		<meta
+			name="description"
+			content="Porfolio och länksamling gjord av Elias"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700,400i,500i,700i|Roboto:300,400,500,700,300i,400i,500i,700i"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+		/>
+
+		<link rel="stylesheet" href="surface_styles.css" />
+		<link rel="stylesheet" href="backbone.css" />
+		<link rel="stylesheet" href="mdc.css" />
+		<link rel="stylesheet" href="main.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link
+			rel="shortcut icon"
+			href="https://i0.wp.com/androidpicks.com/wp-content/uploads/2016/03/Lollipop-Settings-Icon-Android-Picks-150x150.png"
+			type="image/png"
+		/>
+
+		<script type="text/javascript">
+			function autorun() {
+				$("body").fadeIn(500);
+			}
+			if (window.addEventListener)
+				window.addEventListener("load", autorun, false);
+			else if (window.attachEvent) window.attachEvent("onload", autorun);
+			else window.onload = autorun;
+		</script>
+	</head>
+
+	<body>
+		<div id="navmobile"></div>
+
+		<div id="overlay"></div>
+		<div
+			class="middle-margin tile"
+			style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.07);"
+		>
+			<header>
+				<a href="#" class="hidden-link" style="height: 72px;">
+					<svg
+						class="logo"
+						viewBox="0 0 32 32"
+						preserveAspectRatio="xMidYMid meet"
+					>
+						<g>
+							<g>
+								<path
+									d="M17.4,1.5h10.1v2h-8.1v5.8h7.3v2h-7.3v5.8h8.1v2H17.4V1.5z"
+								></path>
+							</g>
+							<path
+								d="M24.4,21.1v3.4h-18v-12h9v-2h-9c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h7v2h-2v2h8v-2h-2v-2h7c1.1,0,2-0.9,2-2
+					    			v-3.4H24.4z"
+							></path>
+						</g>
+					</svg>
+					<h1 class="title">Portal</h1>
+				</a>
+				<button onclick="openMenu()" class="menubutton">
+					<svg viewBox="0 0 24 24">
+						<path
+							d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+						></path>
+					</svg>
+				</button>
+				<nav id="navigation" class="nav--horizontal">
+					<ul class="unform-list">
+						<a href="#program"><li>Program/skript</li></a>
+						<a href="#skola"><li>Skolarbeten</li></a>
+						<a href="#projekt"><li>Hobbyprojekt</li></a>
+						<a href="#digital"><li>Digitala skapelser</li></a>
+						<a href="#familj"><li>Familjeportfolio</li></a>
+					</ul>
+				</nav>
+			</header>
+			<script>
+				$("#navigation")
+					.clone()
+					.appendTo("#navmobile");
+				$("#navmobile>nav>ul").css("flex-direction", "column");
+
+				$("#overlay").click(function() {
+					$("#navmobile").css("margin-left", "-200px");
+					$("#overlay").fadeOut(500);
+				});
+				function openMenu() {
+					var navheight = $("#navmobile>nav").outerHeight();
+					$("#navmobile").css("top", navheight);
+					if ($("#navmobile").css("margin-left") == "0px") {
+						$("#navmobile").css("margin-left", "-200px");
+						$("#overlay").fadeOut(500);
+					}
+					if ($("#navmobile").css("margin-left") == "-200px") {
+						$("#navmobile").css("margin-left", "0px");
+						$("#overlay").fadeIn(500);
+					}
+				}
+			</script>
+
+			<main id="welcome">
+				<h1 class="landing-text">
+					Välkommen till portalen för Elias alla skapelser
+				</h1>
+			</main>
+
+			<main id="program">
+				<h1>Program/skript</h1>
+
+				<article><h2>Program</h2></article>
+
+				<article>
+					<h2>Skript</h2>
+					<div class="card">
+						<a
+							id="downloadUblock"
+							href="https://pastebin.com/raw/h5kt3YQ8"
+						>
+							<button class="button">
+								Download uBlock Origin (Adblock)
+							</button>
+						</a>
+						<a
+							id="downloadTampermonkey"
+							href="https://pastebin.com/raw/h5kt3YQ8"
+						>
+							<button class="button">
+								Download Tampermonkey
+							</button>
+						</a>
+						<a
+							id="downloadAddons"
+							href="https://pastebin.com/raw/z9PQE7uX"
+							target="_blank"
+						>
+							<button class="button" onclick="initInstall()">
+								Install addons
+							</button>
+						</a>
+					</div>
+					<div id="search-container">
+						<form>
+							<label class="textfield">
+								<input placeholder=" " /> <span>FitGirl</span>
+							</label>
+						</form>
+
+						<form>
+							<label class="textfield">
+								<input placeholder=" " /> <span>FMovies</span>
+							</label>
+						</form>
+
+						<form>
+							<label class="textfield">
+								<input placeholder=" " /> <span>YourMovie</span>
+							</label>
+						</form>
+
+						<form>
+							<label class="textfield">
+								<input placeholder=" " /> <span>Pahe</span>
+							</label>
+						</form>
+
+						<form>
+							<label class="textfield">
+								<input placeholder=" " /> <span>1337x</span>
+							</label>
+						</form>
+					</div>
+				</article>
+			</main>
+			<main id="skola"><h1>Skolarbeten</h1></main>
+			<main id="projekt"><h1>Hobbyprojekt</h1></main>
+			<main id="digital"><h1>Digitala skapelser</h1></main>
+			<main id="familj"><h1>Familjeportfolio</h1></main>
+		</div>
+		<script>
+			function changeContent() {
+				var hash = window.location.hash;
+				$("main:not(#welcome)").hide();
+
+				if (hash == "") {
+					$("#welcome").fadeIn();
+					$("a[href!='#']").css("background", "none");
+					document.title = "Elias - Portal";
+				}
+
+				if (hash.includes("#program")) {
+					$("#welcome").hide();
+					$("#program").fadeIn();
+					$("a[href!='#program']").css("background", "none");
+					$("a[href='#program']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#program']>li").html();
+				}
+				if (hash.includes("#skola")) {
+					$("#welcome").hide();
+					$("#skola").fadeIn();
+					$("a[href!='#skola']").css("background", "none");
+					$("a[href='#skola']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#skola']>li").html();
+				}
+				if (hash.includes("#projekt")) {
+					$("#welcome").hide();
+					$("#projekt").fadeIn();
+					$("a[href!='#projekt']").css("background", "none");
+					$("a[href='#projekt']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#projekt']>li").html();
+				}
+				if (hash.includes("#digital")) {
+					$("#welcome").hide();
+					$("#digital").fadeIn();
+					$("a[href!='#digital']").css("background", "none");
+					$("a[href='#digital']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#digital']>li").html();
+				}
+				if (hash.includes("#familj")) {
+					$("#welcome").hide();
+					$("#familj").fadeIn();
+					$("a[href!='#familj']").css("background", "none");
+					$("a[href='#familj']").css("background", "#e5e5e5");
+					document.title =
+						"Elias - " +
+						$(".unform-list>a[href='#familj']>li").html();
+				}
+			}
+			changeContent();
+			window.onhashchange = changeContent;
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>

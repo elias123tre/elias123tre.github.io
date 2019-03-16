@@ -1071,7 +1071,6 @@ header h3 {
 .nav--vertical li,
 .nav--vertical ul {
 	display: inline-block;
-	float: left;
 	clear: left;
 }
 .nav--vertical li:first-child a {
@@ -1106,8 +1105,6 @@ header h3 {
 	margin-bottom: 0;
 	position: fixed;
 	height: 100%;
-	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
 	background: #fff;
 	z-index: 7;
 	overflow-y: auto;
