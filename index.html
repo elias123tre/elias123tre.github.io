@@ -3,12 +3,12 @@
 	<head>
 		<style>
 			body {
-				display: none;
+				opacity: 0;
 			}
 		</style>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Elias - Portal</title>
+		<title>Elias Floreteng</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Elias" />
 		<meta
@@ -45,20 +45,18 @@
 			href="https://drive.google.com/uc?export=view&id=1LdXPYYdNbQq183eXB2AiakbTbqQ74iCo"
 			type="image/svg"
 		/>
-
-		<script type="text/javascript">
-			function autorun() {
-				$("body").fadeIn(800);
-			}
-			if (window.addEventListener)
-				window.addEventListener("load", autorun, false);
-			else if (window.attachEvent) window.attachEvent("onload", autorun);
-			else window.onload = autorun;
+		<script>
+			$(".bg-text-overlay").show();
 		</script>
 	</head>
 
 	<body>
 		<main>
+			<a href="">
+				<div class="logo">
+					Elias Floreteng Filmstudio
+				</div>
+			</a>
 			<div class="bg-text-overlay">
 				<div class="title-container">
 					<h1 class="title">Elias Floreteng</h1>
@@ -84,16 +82,47 @@
 					</p>
 				</div>
 			</div>
-			<a href="">
-				<div class="circle">
-					<svg style="width:32px;height:32px" viewBox="0 0 24 24">
-						<path
-							fill="#ffffff"
-							d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z"
-						/>
-					</svg>
-				</div>
-			</a>
+
+			<button class="fab">
+				<svg style="width:36px;height:36px" viewBox="0 0 24 24">
+					<path
+						fill="#ffffff"
+						d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z"
+					/>
+				</svg>
+			</button>
 		</main>
+		<script></script>
+		<script>
+			function fade() {
+				// $("body").fadeIn(500);
+				$("body").css("opacity", 1);
+				$(".title-container").css(
+					"transition",
+					"margin ease-in-out 1s"
+				);
+				setTimeout(function() {
+					$(".title-container").css("margin", 0);
+				}, 2000);
+			}
+
+			// if (document.readyState === "complete") {
+			// 	fade();
+			// }
+
+			// document.addEventListener("DOMContentLoaded", function() {
+			// 	fade();
+			// });
+
+			// document.onreadystatechange = () => {
+			// 	if (document.readyState === "complete") {
+			// 		fade();
+			// 	}
+			// };
+
+			window.onload = fade();
+
+			// $(window).load(fade());
+		</script>
 	</body>
 </html>

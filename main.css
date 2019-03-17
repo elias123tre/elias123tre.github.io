@@ -1,9 +1,29 @@
+body {
+	opacity: 0;
+	transition: opacity ease-in-out 0.5s;
+}
 html,
 body,
 main {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	font-family: "Google Sans", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 16px;
+	padding: 8px;
+	line-height: 1;
+	border: 5px solid black;
+	transition: margin ease-in-out 1s;
 }
 
 .bg-text-overlay {
@@ -23,6 +43,7 @@ main {
 	display: inline-flex;
 	flex-direction: column;
 	height: fit-content;
+	margin-left: -200vw;
 }
 
 .title {
@@ -104,15 +125,15 @@ main {
 	width: 150px;
 }
 
-.circle {
+.fab {
 	position: absolute;
 	right: 64px;
 	bottom: 21%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: green;
-	width: 64px;
-	height: 64px;
+	background-color: rgb(33, 150, 243);
+	width: 72px;
+	height: 72px;
 	border-radius: 50%;
 }
