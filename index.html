@@ -1,128 +1,816 @@
 <!DOCTYPE html>
 <html lang="se">
-	<head>
-		<style>
-			body {
-				opacity: 0;
-			}
-		</style>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Elias Floreteng</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="author" content="Elias" />
-		<meta
-			name="description"
-			content="Porfolio och länksamling gjord av Elias"
-		/>
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700,400i,500i,700i|Roboto:300,400,500,700,300i,400i,500i,700i|Roboto+Slab:300,400,500,700,300i,400i,500i,700i|Martel:300,400,500,700,300i,400i,500i,700i"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cloud.typography.com/7358/655042/css/fonts.css"
-			type="text/css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://necolas.github.io/normalize.css/latest/normalize.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-		/>
+<head>
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Elias Floreteng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Elias" />
+  <meta name="description" content="Porfolio och länksamling gjord av Elias" />
 
-		<link rel="stylesheet" href="surface_styles.css" />
-		<link rel="stylesheet" href="backbone.css" />
-		<link rel="stylesheet" href="mdc.css" />
-		<link rel="stylesheet" href="main.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Roboto:300,400,500,700|Roboto+Slab:300,400,500,700|Open+Sans:300,400,600,700|Rubik:300,400,500,700|Montserrat:300,400,500,600,700"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1LdXPYYdNbQq183eXB2AiakbTbqQ74iCo"
+    type="image/svg" />
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link
-			rel="shortcut icon"
-			href="https://drive.google.com/uc?export=view&id=1LdXPYYdNbQq183eXB2AiakbTbqQ74iCo"
-			type="image/svg"
-		/>
-		<script>
-			$(".bg-text-overlay").show();
-		</script>
-	</head>
+  <link rel="stylesheet" href="default.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
 
-	<body>
-		<main>
-			<a href="">
-				<div class="logo">
-					Elias Floreteng Filmstudio
-				</div>
-			</a>
-			<div class="bg-text-overlay">
-				<div class="title-container">
-					<h1 class="title">Elias Floreteng</h1>
-					<span class="subtitle">Kreativa skapelser</span>
-				</div>
-			</div>
-			<div class="card">
-				<img
-					class="card-img"
-					src="https://drive.google.com/uc?export=view&id=1KIyc23ei-HJ597agIY_eKvzcaEoZo10i"
-					alt="Movie icon with low poly fill"
-				/>
-				<div class="paragraph-cont">
-					<h1>Filmer</h1>
-					<p>
-						Ett intresse jag haft sedan jag först kom i kontakt med
-						tekniken är att skapa digitalt. Jag brinner djupt för
-						att göra alla typer av digitala projekt och att lära mig
-						nya skickligheter att applicera alla möjliga
-						applikationer. Följande hemsida kommer redovisa en
-						portfolio av alla mina olika arbeten jag gjort genom min
-						resa.
-					</p>
-				</div>
-			</div>
+<body>
+  <header class="header">
+    <div class="header-content flex-row">
+      <a class="logo-container unform-link" href="/">
+        <div class="infill">
+          <h1 class="logo">Elias Floreteng Filmstudio</h1>
+        </div>
+      </a>
+      <nav class="menu">
+        <ul class="unform-list auto-id flex-row">
+          <li>Skolarbeten</li>
+          <li>Skapelser</li>
+          <li>Om mig</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="skolarbeten main-wrapper">
+    <aside class="sidenav">
+      <ul class="unform-list set-id">
+        <li>
+          <svg viewbox="0 0 24 24" class="icon">
+            <path fill="#80868b"
+              d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z">
+            </path>
+          </svg>
+        </li>
+        <li>
+          <svg viewbox="0 0 24 24" class="icon">
+            <path fill="#80868b"
+              d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z">
+            </path>
+          </svg>
+        </li>
+        <li>
+          <svg viewbox="0 0 24 24" class="icon">
+            <path fill="#80868b"
+              d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z">
+            </path>
+          </svg>
+        </li>
+        <li>
+          <svg viewbox="0 0 24 24" class="icon">
+            <path fill="#80868b"
+              d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z">
+            </path>
+          </svg>
+        </li>
+      </ul>
+    </aside>
+    <section class="post-wrapper">
+      <article class="card post">
+        <h1>Broshyr</h1>
+        <h2 class="subheader">2019-02-06</h2>
+        <p>
+          En broshyr där alla arbeten inom digitalt skapande illustreras
+        </p>
+        <img class="full-video" src="https://drive.google.com/uc?export=view&id=1RxkztGMFPfOzzBE8RJlxuzynR5fUZt3-"
+          alt="" />
+        <div class="downloads">
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1cOsqgfR3gDNkwi7LYB9HaxaNWq5hoqR6"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Broshyren
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1RxkztGMFPfOzzBE8RJlxuzynR5fUZt3-"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Rendering
+            </button>
+          </a>
+        </div>
+      </article>
+      <article class="card post">
+        <h1>Hur en dator fungerar</h1>
+        <h2 class="subheader">2018-10-25</h2>
+        <p>
+          En kort film om de fruktansvärt långsamma datorerna i skolan
+        </p>
+        <video class="full-video" src="https://drive.google.com/uc?export=view&id=1-vDavVvpuwCFhAlmST-_gv7UNRxt2-HW"
+          controls preload="none"
+          poster="https://drive.google.com/uc?export=view&id=1rQ9MlGeqBj8Zh7e_dDDE9KRQ1gtmRMqq"></video>
+        <div class="downloads">
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1-vDavVvpuwCFhAlmST-_gv7UNRxt2-HW"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Filmen
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1vqqoR_I7Zuw5lenvVIjyMbTl09OhzIa5"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Affish 1
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1ggFf9-sHDzXaTCHDzZcyTeZWWDKrljG9"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Affish 2
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1QqyWzmDAJvFSwsIuNzslLySjgZaBmi9D"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Affish 3
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=16eNkYeM6_N93anPSX-iR10LrZBqjZMSR"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Pecha kucha
+            </button>
+          </a>
+        </div>
+      </article>
+      <article class="card post">
+        <h1>Dator bråk</h1>
+        <h2 class="subheader">2018-10-16</h2>
+        <p>
+          En stop motion film där Eric och Alex bråkar med en dator
+        </p>
+        <video class="full-video" src="https://drive.google.com/uc?export=view&id=1FYy_ODOTpoQb_1VPNwrJ6WwozrT9Jq00"
+          controls preload="none"
+          poster="https://drive.google.com/uc?export=view&id=1XWcbarSz5-3HLau6U7fQpxzYkKlKd_dT"></video>
+        <div class="downloads">
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1FYy_ODOTpoQb_1VPNwrJ6WwozrT9Jq00"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Filmen
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1XWcbarSz5-3HLau6U7fQpxzYkKlKd_dT"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Affish
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1hHDxZm6AkPukmx06d-GEeVSb4N4x_aL9"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Bild på Alex
+            </button>
+          </a>
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1GhOTP9x-Vlogt-29UotjuEbraw_fbIKn"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Bild på Eric
+            </button>
+          </a>
+        </div>
+      </article>
+      <article class="card post">
+        <h1>Presentation</h1>
+        <h2 class="subheader">2018-10-09</h2>
+        <p>En kvick presentation av mig själv och mina intressen</p>
+        <video class="full-video" src="https://drive.google.com/uc?export=view&id=1Gq_1zODmD_4w11w-Ubj50dst7n1YCXEd"
+          controls preload="none"
+          poster="https://drive.google.com/uc?export=view&id=1QKMsgHhCxbJzQ1YjbwEDkrniygJ2gpl3"></video>
+        <div class="downloads">
+          <a target="_blank" href="https://drive.google.com/uc?export=view&id=1Gq_1zODmD_4w11w-Ubj50dst7n1YCXEd"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Filmen
+            </button>
+          </a>
+          <a target="_blank"
+            href="https://docs.google.com/document/u/0/d/1TIhBB2kbaSfTTvdAy5dO9pCEeywpLZga-t77rYNuUww/export?format=docx"
+            class="unform-link">
+            <button class="button-flex button">
+              <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                <path
+                  d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+              </svg>
+              Manus
+            </button>
+          </a>
+        </div>
+      </article>
+    </section>
+    <a class="dp-6 dp-12-hov fab unform-link" href="#"><svg style="width:32px;height:32px" viewbox="0 0 24 24">
+        <path fill="#ffffff" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg></a>
+  </main>
+  <main class="skapelser main-wrapper">
 
-			<button class="fab">
-				<svg style="width:36px;height:36px" viewBox="0 0 24 24">
-					<path
-						fill="#ffffff"
-						d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z"
-					/>
-				</svg>
-			</button>
-		</main>
-		<script></script>
-		<script>
-			function fade() {
-				// $("body").fadeIn(500);
-				$("body").css("opacity", 1);
-				$(".title-container").css(
-					"transition",
-					"margin ease-in-out 1s"
-				);
-				setTimeout(function() {
-					$(".title-container").css("margin", 0);
-				}, 2000);
-			}
+    <section class="mjukvara section">
+      <h1>Mjukvara</h1>
+      <p>
+        Här finns alla olika program och projekt jag kodat
+      </p>
+      <div class="list-container flex-row">
+        <div class="skript">
+          <h2>Skript</h2>
+          <ul class="list">
 
-			// if (document.readyState === "complete") {
-			// 	fade();
-			// }
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12C5,7.9 8.2,4.73 12.2,4.73C15.29,4.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2 12.1,2C6.42,2 2.03,6.8 2.03,12C2.03,17.05 6.16,22 12.25,22C17.6,22 21.5,18.33 21.5,12.91C21.5,11.76 21.35,11.1 21.35,11.1V11.1Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Enklare Google URL
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
 
-			// document.addEventListener("DOMContentLoaded", function() {
-			// 	fade();
-			// });
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,15A1.5,1.5 0 0,0 17,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,12A1.5,1.5 0 0,0 20,10.5A1.5,1.5 0 0,0 18.5,9Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Bhop till TF2
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
 
-			// document.onreadystatechange = () => {
-			// 	if (document.readyState === "complete") {
-			// 		fade();
-			// 	}
-			// };
 
-			window.onload = fade();
 
-			// $(window).load(fade());
-		</script>
-	</body>
+          </ul>
+        </div>
+        <div class="program">
+          <h2>Program</h2>
+          <ul class="list">
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M12,3L2,12H5V20H19V12H22L12,3M12,8.5C14.34,8.5 16.46,9.43 18,10.94L16.8,12.12C15.58,10.91 13.88,10.17 12,10.17C10.12,10.17 8.42,10.91 7.2,12.12L6,10.94C7.54,9.43 9.66,8.5 12,8.5M12,11.83C13.4,11.83 14.67,12.39 15.6,13.3L14.4,14.47C13.79,13.87 12.94,13.5 12,13.5C11.06,13.5 10.21,13.87 9.6,14.47L8.4,13.3C9.33,12.39 10.6,11.83 12,11.83M12,15.17C12.94,15.17 13.7,15.91 13.7,16.83C13.7,17.75 12.94,18.5 12,18.5C11.06,18.5 10.3,17.75 10.3,16.83C10.3,15.91 11.06,15.17 12,15.17Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Hem Automatisering
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Spårning av Arbetstid
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="projekt">
+          <h2>Projekt</h2>
+          <ul class="list">
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Denna Hemsida
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Granskning av Betyg
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="line">
+
+    <section class="section">
+      <h1>Media</h1>
+      <p>Här finns alla mina Photoshop arbeten, iconer och vektor-grafik jag skapat</p>
+      <div class="list-container flex-row">
+        <div>
+          <h2>Photoshop</h2>
+          <ul class="list">
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M4,4H11V2H4A2,2 0 0,0 2,4V11H4V4M10,13L6,18H18L15,14L12.97,16.71L10,13M17,8.5A1.5,1.5 0 0,0 15.5,7A1.5,1.5 0 0,0 14,8.5A1.5,1.5 0 0,0 15.5,10A1.5,1.5 0 0,0 17,8.5M20,2H13V4H20V11H22V4A2,2 0 0,0 20,2M20,20H13V22H20A2,2 0 0,0 22,20V13H20V20M4,13H2V20A2,2 0 0,0 4,22H11V20H4V13Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Multiskärm Bakgrund
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/elias123tre/Simple-Google-URL" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://github.com/elias123tre/Simple-Google-URL" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div>
+          <h2>Ikoner</h2>
+          <ul class="list">
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 10.442 13.149">
+                <path
+                  d="M 0 6.938 L 0 6.434 A 8.118 8.118 0 0 1 0.224 4.492 A 6.833 6.833 0 0 1 0.709 3.141 A 5.872 5.872 0 0 1 1.879 1.488 A 5.417 5.417 0 0 1 2.684 0.838 Q 3.949 0 5.426 0 A 5.446 5.446 0 0 1 7.084 0.241 A 4.328 4.328 0 0 1 9.088 1.576 Q 10.442 3.153 10.442 5.883 L 10.442 6.668 L 1.395 6.668 L 1.395 6.938 A 6.19 6.19 0 0 0 1.627 8.672 A 4.915 4.915 0 0 0 2.631 10.53 A 4.108 4.108 0 0 0 4.051 11.617 A 4.052 4.052 0 0 0 5.742 11.965 A 5.244 5.244 0 0 0 6.786 11.866 A 4.062 4.062 0 0 0 7.729 11.555 A 3.945 3.945 0 0 0 8.696 10.894 A 5.28 5.28 0 0 0 9.293 10.242 L 10.172 10.91 A 4.962 4.962 0 0 1 6.569 13.094 A 6.948 6.948 0 0 1 5.684 13.149 A 5.634 5.634 0 0 1 3.498 12.728 A 5.398 5.398 0 0 1 2.76 12.352 Q 1.453 11.555 0.727 10.131 A 6.694 6.694 0 0 1 0.03 7.642 A 8.142 8.142 0 0 1 0 6.938 Z M 1.442 5.473 L 9.047 5.473 L 9.047 5.321 Q 8.988 3.492 8.004 2.344 A 3.192 3.192 0 0 0 5.671 1.203 A 4.234 4.234 0 0 0 5.426 1.196 A 3.492 3.492 0 0 0 2.863 2.25 A 4.266 4.266 0 0 0 2.76 2.356 A 4.703 4.703 0 0 0 1.763 4.04 Q 1.538 4.683 1.444 5.449 A 8.285 8.285 0 0 0 1.442 5.473 Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Profilbild - e
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/elias123tre/lifx-motion-sensor" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://github.com/elias123tre/lifx-motion-sensor" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M16.5,16.25C16.5,14.75 13.5,14 12,14C10.5,14 7.5,14.75 7.5,16.25V17H16.5M12,12.25A2.25,2.25 0 0,0 14.25,10A2.25,2.25 0 0,0 12,7.75A2.25,2.25 0 0,0 9.75,10A2.25,2.25 0 0,0 12,12.25Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Profilbild - Hoodie
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path
+                  d="M9,7H15V9H11V11H14V13H11V17H9V7M3,5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5M5,5V19H19V5H5Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Floreteng Loga
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 24 24">
+                <path d="M6,2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M6,4V8H18V4H6Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Östra Loga SVG
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/elias123tre/elias123tre.github.io" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://github.com/elias123tre/elias123tre.github.io" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div>
+          <h2>Video</h2>
+          <ul class="list">
+
+            <li>
+              <svg class="list-icon" viewbox="0 0 10.442 13.149">
+                <path
+                  d="M 0 6.938 L 0 6.434 A 8.118 8.118 0 0 1 0.224 4.492 A 6.833 6.833 0 0 1 0.709 3.141 A 5.872 5.872 0 0 1 1.879 1.488 A 5.417 5.417 0 0 1 2.684 0.838 Q 3.949 0 5.426 0 A 5.446 5.446 0 0 1 7.084 0.241 A 4.328 4.328 0 0 1 9.088 1.576 Q 10.442 3.153 10.442 5.883 L 10.442 6.668 L 1.395 6.668 L 1.395 6.938 A 6.19 6.19 0 0 0 1.627 8.672 A 4.915 4.915 0 0 0 2.631 10.53 A 4.108 4.108 0 0 0 4.051 11.617 A 4.052 4.052 0 0 0 5.742 11.965 A 5.244 5.244 0 0 0 6.786 11.866 A 4.062 4.062 0 0 0 7.729 11.555 A 3.945 3.945 0 0 0 8.696 10.894 A 5.28 5.28 0 0 0 9.293 10.242 L 10.172 10.91 A 4.962 4.962 0 0 1 6.569 13.094 A 6.948 6.948 0 0 1 5.684 13.149 A 5.634 5.634 0 0 1 3.498 12.728 A 5.398 5.398 0 0 1 2.76 12.352 Q 1.453 11.555 0.727 10.131 A 6.694 6.694 0 0 1 0.03 7.642 A 8.142 8.142 0 0 1 0 6.938 Z M 1.442 5.473 L 9.047 5.473 L 9.047 5.321 Q 8.988 3.492 8.004 2.344 A 3.192 3.192 0 0 0 5.671 1.203 A 4.234 4.234 0 0 0 5.426 1.196 A 3.492 3.492 0 0 0 2.863 2.25 A 4.266 4.266 0 0 0 2.76 2.356 A 4.703 4.703 0 0 0 1.763 4.04 Q 1.538 4.683 1.444 5.449 A 8.285 8.285 0 0 0 1.442 5.473 Z" />
+              </svg>
+              <span class="text">
+                <div class="label">
+                  Animerat e
+                </div>
+                <div class="date">2019-01-01</div>
+              </span>
+              <div class="buttons">
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                    </svg>
+                  </button>
+                </a>
+                <a target="_blank" href="https://pastebin.com/raw/SUz1W9r3" title="Länk saknas" class="unform-link">
+                  <button class="info passive-button">
+                    <svg viewbox="0 0 24 24">
+                      <path
+                        d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="line">
+
+    <section class="section">
+      <h1>Länksamling</h1>
+      <p>Här är några användbara länkar och sökfunktioner</p>
+      <div class="list-container flex-row flex-left">
+
+        <div>
+          <h2>Sök</h2>
+          <form>
+            <label class="textfield">
+              <input placeholder=" "> <span>FitGirl</span>
+            </label>
+          </form>
+
+          <form>
+            <label class="textfield">
+              <input placeholder=" "> <span>FMovies</span>
+            </label>
+          </form>
+
+          <form>
+            <label class="textfield">
+              <input placeholder=" "> <span>YourMovie</span>
+            </label>
+          </form>
+
+          <form>
+            <label class="textfield">
+              <input placeholder=" "> <span>Pahe</span>
+            </label>
+          </form>
+
+          <form>
+            <label class="textfield">
+              <input placeholder=" "> <span>1337x</span>
+            </label>
+          </form>
+        </div>
+
+        <div>
+          <h2>Ladda ner</h2>
+
+          <div class="downloads flex-col">
+            <a id="downloadUblock" class="unform-link" href="https://pastebin.com/raw/h5kt3YQ8">
+              <button class="button-flex button">
+                <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                  <path
+                    d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+                </svg>
+                uBlock Origin (Adblock)
+              </button>
+            </a>
+            <a id="downloadTampermonkey" class="unform-link" href="https://pastebin.com/raw/h5kt3YQ8">
+              <button class="button-flex button">
+                <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                  <path
+                    d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+                </svg>
+                Tampermonkey
+              </button>
+            </a>
+            <a id="downloadAddons" class="unform-link" href="https://pastebin.com/raw/z9PQE7uX" target="_blank">
+              <button class="button-flex button" onclick="initInstall()">
+                <svg class="s-icon c-icon" viewbox="0 0 16 16">
+                  <path
+                    d="M0,11h2v3h12v-3h2v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2 M11.6,5.6L9,8.2V0H7v8.2L4.4,5.6L3,7l5,5l5-5L11.6,5.6z" />
+                </svg>
+                Install addons
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <main class="om-mig main-wrapper">
+    <section>
+      <img class="dp-2 dp-8-hov m-image"
+        src="https://drive.google.com/uc?export=view&id=1jDTOLe4eXe6d0Lom92XeGgTSwAL1tftR" align="right" alt="" />
+      <h1>Om mig</h1>
+      <p id="description">
+        Jag är en <span id="age"></span> årig kille och har ett intresse sedan jag först kom i kontakt med tekniken att
+        skapa digitalt. Jag brinner djupt för att göra alla typer av digitala projekt och att lära mig nya skickligheter
+        och applicera kunskapen i alla möjliga applikationer.
+      </p>
+      <script>
+        function getAge(dateString) {
+          var today = new Date();
+          var birthDate = new Date(dateString);
+          var age = today.getFullYear() - birthDate.getFullYear();
+          var m = today.getMonth() - birthDate.getMonth();
+          if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+          }
+          return age;
+        }
+
+        $("#age").html(getAge("2002-06-18"))
+      </script>
+    </section>
+    <hr class="line">
+    <section>
+      <h1>Hemsidan</h1>
+      <p>
+        Den här hemsidan är skapad i association med ämnet digitalt skapande men även ett eget initativ att samla olika
+        arbeten på en och samma, lättilgängliga plats. Syftet med den här hemsidan är främst att ha alla filmer jag
+        skapat i digitalt skapande tillgängliga online och det är därför det är som första sida. Men eftersom jag kommer
+        utnytja den här hemsidan även utanför skolvärlden så finns flikarna <a href="#skapelser">Skapelser</a> och <a
+          href="#om-mig">Om mig</a> också.
+      </p>
+    </section>
+    <hr class="line">
+    <section>
+      <h1>Kontakt</h1>
+      <p>
+        E-post: <a href="mailto:elias.floreteng@edu.huddinge.se">elias.floreteng@edu.huddinge.se</a>
+      </p>
+    </section>
+  </main>
+
+  <style id="menu-styles"></style>
+
+  <script src="javascript.js"></script>
+</body>
+
 </html>
