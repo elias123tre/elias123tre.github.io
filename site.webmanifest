@@ -1,0 +1,12 @@
+{
+	"name": "STAR Arbetstid",
+	"short_name": "STAR",
+	"icons": [
+		{
+			"src": "/android-chrome-144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	],
+	"start_url": "https://floreteng.se/star-arbetstid"
+}

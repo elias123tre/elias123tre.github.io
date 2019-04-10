@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			http-equiv="Cache-Control"
+			content="must-revalidate, max-age=0, public"
+		/>
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="application-name" content="STAR Arbetstid" />
+		<link rel="manifest" href="site.webmanifest" />
+
+		<title>STAR Arbetstid</title>
+
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700,400i,500i,700i|Roboto:300,400,500,700,300i,400i,500i,700i"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			href="https://i.imgur.com/jhvIhVH.gif"
+			type="image/gif"
+		/>
+		<style>
+			body {
+				overflow: hidden;
+				background-color: #f0f0f0;
+				box-sizing: border-box;
+			}
+			h1 {
+				color: #454545;
+				font-size: 24px;
+				font-family: "Google Sans";
+				text-align: center;
+				height: 64px;
+				margin: 0;
+				line-height: 64px;
+			}
+			iframe {
+				width: 100%;
+				height: calc(100vh - 64px);
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="timeleft">Laddar in data...</h1>
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSd6VOxos-6AYATpuhosOV37FyhDUYyDEwWXeTAWs3Yu764xmg/viewform"
+			frameborder="0"
+		></iframe>
+		<script>
+			$.get(
+				"https://docs.google.com/spreadsheets/d/13-aPmLqj03nLFDYvc9XPHF__LQoFEVeLpRA52rPFw0E/pub?single=true&gid=842251009&range=a1&output=csv",
+				function(data) {
+					$("#timeleft").html(data);
+				}
+			);
+		</script>
+	</body>
+</html>
