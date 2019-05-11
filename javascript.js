@@ -285,3 +285,38 @@ $('h1').each(
     )
   }
 )
+
+var installing = false
+
+var addons = ['https://adsbypasser.github.io/releases/adsbypasser.full.es7.user.js',
+  'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js',
+  'https://raw.githubusercontent.com/HandyUserscripts/AntiAdware/master/AntiAdware.user.js',
+  'https://greasyfork.org/scripts/9165-auto-close-youtube-ads/code/Auto%20Close%20YouTube%20Ads.user.js',
+  'https://greasyfork.org/scripts/27481-automatic-clicker-for-recaptcha-of-url-shortener/code/Automatic%20Clicker%20for%20reCAPTCHA%20of%20URL%20Shortener.user.js',
+  'https://greasyfork.org/scripts/31088-morecaptcha/code/MoreCAPTCHA.user.js']
+var currentAddon = addons[1]
+
+function handleVisibilityChange () {
+  if (installing) {
+    if (!document.hidden) {
+      if (currentAddon === undefined) {
+        console.log('Done installing addons')
+        installing = false
+        return
+      }
+
+      window.location.replace(currentAddon)
+      currentAddon = addons[(addons.indexOf(currentAddon)) + 1]
+    }
+  }
+}
+
+function initInstall () {
+  installing = true
+  currentAddon = addons[1]
+}
+
+document.addEventListener('visibilitychange', handleVisibilityChange, false)
+
+$('#downloadAddons > button').click(initInstall)
+$('#downloadAddons').attr('href', addons[0])
