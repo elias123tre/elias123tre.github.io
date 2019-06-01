@@ -1,170 +1,151 @@
 <!DOCTYPE html>
 <html lang="se">
-	<head>
-		<style>
-			body {
-				display: none;
-			}
-		</style>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Elias Floreteng</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="author" content="Elias" />
-		<meta
-			name="description"
-			content="Porfolio och länksamling gjord av Elias"
-		/>
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Roboto:300,400,500,700|Roboto+Slab:300,400,500,700|Open+Sans:300,400,600,700|Rubik:300,400,500,700|Montserrat:300,400,500,600,700"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://necolas.github.io/normalize.css/latest/normalize.css"
-		/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link
-			rel="shortcut icon"
-			href="https://drive.google.com/uc?export=view&id=1LdXPYYdNbQq183eXB2AiakbTbqQ74iCo"
-			type="image/svg"
-		/>
+<head>
+	<style>
+		body {
+			display: none;
+		}
+	</style>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Elias Floreteng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="Elias" />
+	<meta name="description" content="Porfolio och länksamling gjord av Elias" />
 
-		<link rel="stylesheet" href="main.css" />
-	</head>
+	<link
+		href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Roboto:300,400,500,700|Roboto+Slab:300,400,500,700|Open+Sans:300,400,600,700|Rubik:300,400,500,700|Montserrat:300,400,500,600,700"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1LdXPYYdNbQq183eXB2AiakbTbqQ74iCo"
+		type="image/svg" />
 
-	<body>
-		<main>
-			<header>
-				<a href="/" class="logo">
-					Elias Floreteng Filmstudio
-				</a>
-			</header>
-			<img
-				class="background"
-				src="https://drive.google.com/uc?export=view&id=1rQ9MlGeqBj8Zh7e_dDDE9KRQ1gtmRMqq"
-				alt=""
-			/>
-			<section class="title-flexbox">
-				<span class="title-container">
-					<h1>Elias Floreteng</h1>
-					<h2>Kreativa skapelser</h2>
-				</span>
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+	<main>
+		<header>
+			<a href="/" class="logo">
+				Elias Floreteng Filmstudio
+			</a>
+		</header>
+		<img class="background" src="https://drive.google.com/uc?export=view&id=1rQ9MlGeqBj8Zh7e_dDDE9KRQ1gtmRMqq" alt="" />
+		<section class="title-flexbox">
+			<span class="title-container">
+				<h1>Elias Floreteng</h1>
+				<h2>Kreativa skapelser</h2>
+			</span>
+		</section>
+
+		<section class="flex-row2">
+			<section class="card flex-row">
+				<div class="text-content">
+					<h1>Om mig</h1>
+					<p>
+						Ett intresse jag haft sedan jag först kom i kontakt
+						med tekniken är att skapa digitalt. Jag brinner
+						djupt för att göra alla typer av digitala projekt
+						och att lära mig nya skickligheter att applicera
+						alla möjliga applikationer. Följande hemsida kommer
+						redovisa en portfolio av alla mina olika arbeten jag
+						gjort genom min resa.
+					</p>
+				</div>
+				<button class="next fab" data-md-tooltip aria-label="Se skapelserna">
+					<svg style="width:36px;height:36px" viewbox="0 0 24 24">
+						<path fill="#ffffff" d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" />
+					</svg>
+				</button>
 			</section>
+			<nav>
+				<ul class="auto-rename">
+					<li>Skolarbeten</li>
+					<li>Mjukvara</li>
+					<li>Om mig</li>
+				</ul>
+			</nav>
+		</section>
+	</main>
+</body>
+<script>
+	$.fn.flyIn = function flyIn(dir, delay, value = 0) {
+		options = {};
+		options[dir] = value;
+		$(this).animate(options, delay * 1000);
+	};
 
-			<section class="flex-row2">
-				<section class="card flex-row">
-					<div class="text-content">
-						<h1>Om mig</h1>
-						<p>
-							Ett intresse jag haft sedan jag först kom i kontakt
-							med tekniken är att skapa digitalt. Jag brinner
-							djupt för att göra alla typer av digitala projekt
-							och att lära mig nya skickligheter att applicera
-							alla möjliga applikationer. Följande hemsida kommer
-							redovisa en portfolio av alla mina olika arbeten jag
-							gjort genom min resa.
-						</p>
-					</div>
-					<button
-						class="next fab"
-						data-md-tooltip
-						aria-label="Se skapelserna"
-					>
-						<svg style="width:36px;height:36px" viewBox="0 0 24 24">
-							<path
-								fill="#ffffff"
-								d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z"
-							/>
-						</svg>
-					</button>
-				</section>
-				<nav>
-					<ul class="auto-rename">
-						<li>Skolarbeten</li>
-						<li>Mjukvara</li>
-						<li>Om mig</li>
-					</ul>
-				</nav>
-			</section>
-		</main>
-	</body>
-	<script>
-		$.fn.flyIn = function flyIn(dir, delay, value = 0) {
-			options = {};
-			options[dir] = value;
-			$(this).animate(options, delay * 1000);
-		};
+	$(".auto-rename > li").each(function () {
+		$(this).attr(
+			"id",
+			"id-" +
+			$(this)
+				.html()
+				.toLowerCase()
+				.replace(" ", "-")
+		);
+	});
 
-		$(".auto-rename > li").each(function() {
-			$(this).attr(
-				"id",
-				"id-" +
-					$(this)
-						.html()
-						.toLowerCase()
-						.replace(" ", "-")
+	$(window).one("load", function () {
+		$("body").css("display", "flex");
+		$("body").hide();
+
+		$(".logo").flyIn("top", 0.7);
+		$(".card").flyIn("bottom", 0.7);
+		$("body").fadeIn(700, function () {
+			setTimeout(function () {
+				$(".title-container").flyIn("left", 1.5);
+				$("nav").flyIn("right", 0.7);
+			}, 300);
+		});
+	});
+	$(".next").click(function () {
+		$("body").fadeOut(300, function () {
+			window.location = "README.md";
+		});
+	});
+
+	function changePage() {
+		list = [];
+		$(".auto-rename > li").each(function () {
+			list.push(
+				$(this)
+					.attr("id")
+					.substring(3)
 			);
 		});
 
-		$(window).one("load", function() {
-			$("body").css("display", "flex");
-			$("body").hide();
-
-			$(".logo").flyIn("top", 0.7);
-			$(".card").flyIn("bottom", 0.7);
-			$("body").fadeIn(700, function() {
-				setTimeout(function() {
-					$(".title-container").flyIn("left", 1.5);
-					$("nav").flyIn("right", 0.7);
-				}, 300);
-			});
-		});
-		$(".next").click(function() {
-			$("body").fadeOut(300, function() {
-				window.location = "README.md";
-			});
-		});
-
-		function changePage() {
-			list = [];
-			$(".auto-rename > li").each(function() {
-				list.push(
-					$(this)
-						.attr("id")
-						.substring(3)
-				);
+		currentPage = window.location.hash.substring(1);
+		if (this.id != undefined) {
+			window.location.hash = $(this)
+				.attr("id")
+				.substring(3);
+			$("main").css("position", "relative");
+			$("main").flyIn("top", 0.7, "-100vh");
+			$(".logo").flyIn("top", 0.7, "-20vh");
+			$(".background").fadeOut(700, function () {
+				$("main").empty();
 			});
 
-			currentPage = window.location.hash.substring(1);
-			if (this.id != undefined) {
-				window.location.hash = $(this)
-					.attr("id")
-					.substring(3);
-				$("main").css("position", "relative");
-				$("main").flyIn("top", 0.7, "-100vh");
-				$(".logo").flyIn("top", 0.7, "-20vh");
-				$(".background").fadeOut(700, function() {
-					$("main").empty();
-				});
-
+			// TODO: Add function to change page to ^
+		} else {
+			if (list.includes(window.location.hash.substring(1))) {
+				console.log(currentPage);
 				// TODO: Add function to change page to ^
-			} else {
-				if (list.includes(window.location.hash.substring(1))) {
-					console.log(currentPage);
-					// TODO: Add function to change page to ^
-				}
 			}
-			loadPage(currentPage);
 		}
+		loadPage(currentPage);
+	}
 
-		function loadPage(page) {
-			$(".logo").flyIn("top", 0.7);
-			$("main").load(page + ".html");
-		}
+	function loadPage(page) {
+		$(".logo").flyIn("top", 0.7);
+		$("main").load(page + ".html");
+	}
 
-		$(".auto-rename > li").on("click", changePage);
-		changePage();
-	</script>
+	$(".auto-rename > li").on("click", changePage);
+	changePage();
+</script>
+
 </html>
